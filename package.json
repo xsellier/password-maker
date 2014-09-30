@@ -1,6 +1,6 @@
 {
   "name": "password-maker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a password randomly",
   "main": "lib/index.js",
   "scripts": {

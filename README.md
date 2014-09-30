@@ -33,9 +33,19 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
-0.1.1
+1.0.2
 
-- Final release
+- Update README.md file
+
+1.0.1
+
+- Fix a bug with password index overwritten
+- Add more unit test !
+
+1.0.0
+
+- Add password generation
+- Add unit test
 
 0.1.0
 
