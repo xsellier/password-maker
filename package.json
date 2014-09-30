@@ -1,0 +1,32 @@
+{
+  "name": "password-maker",
+  "version": "0.1.0",
+  "description": "Generate a password randomly",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xsellier/password-maker.git"
+  },
+  "keywords": [
+    "password",
+    "pwd",
+    "generate",
+    "generator",
+    "random",
+    "ran",
+    "optimize"
+  ],
+  "author": "Xavier Sellier <xsellier@gmail.com> (https://github.com/xsellier)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xsellier/password-maker/issues"
+  },
+  "homepage": "https://github.com/xsellier/password-maker",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^1.21.4"
+  }
+}
