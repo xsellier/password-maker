@@ -1,6 +1,6 @@
 {
   "name": "password-maker",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generate a password randomly",
   "main": "lib/index.js",
   "scripts": {
@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/xsellier/password-maker",
   "devDependencies": {
-    "chai": "^1.9.2",
-    "mocha": "^1.21.4"
+    "chai": "~1.9.2",
+    "mocha": "~1.21.4"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
   }
 }
