@@ -1,6 +1,5 @@
 var passwordMaker = require("../lib/index")
   , chai          = require('chai')
-  , should        = chai.should()
   , expect        = chai.expect;
 
 describe("The password-maker", function() {
@@ -17,8 +16,10 @@ describe("The password-maker", function() {
       numbers  : false
     };
 
-    var result = passwordMaker.generatePassword(options);
-    expect(result).to.match(/^[a-z]+$/);
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(options);
+      expect(result).to.match(/^[a-z]+$/);
+    }
     done();
   });
 
@@ -29,8 +30,10 @@ describe("The password-maker", function() {
       numbers  : false
     };
 
-    var result = passwordMaker.generatePassword(options);
-    expect(result).to.match(/[A-Z]/);
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(options);
+      expect(result).to.match(/[A-Z]/);
+    }
     done();
   });
 
@@ -41,8 +44,11 @@ describe("The password-maker", function() {
       numbers  : false
     };
 
-    var result = passwordMaker.generatePassword(options);
-    expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/);
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(options);
+      expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/#]/);
+    }
+
     done();
   });
 
@@ -53,8 +59,11 @@ describe("The password-maker", function() {
       numbers  : true
     };
 
-    var result = passwordMaker.generatePassword(options);
-    expect(result).to.match(/[0-9]/);
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(options);
+      expect(result).to.match(/[0-9]/);
+    }
+
     done();
   });
 
@@ -65,10 +74,13 @@ describe("The password-maker", function() {
       numbers  : true
     };
 
-    var result = passwordMaker.generatePassword(options);
-    expect(result).to.match(/[A-Z]/);
-    expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/);
-    expect(result).to.match(/[0-9]/);
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(options);
+      expect(result).to.match(/[A-Z]/);
+      expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/#]/);
+      expect(result).to.match(/[0-9]/);
+    }
+
     done();
   });
 });
