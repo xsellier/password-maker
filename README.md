@@ -33,6 +33,10 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
+1.0.3
+
+- Fix typo in README.md
+
 1.0.2
 
 - Update README.md file
