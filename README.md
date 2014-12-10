@@ -11,7 +11,7 @@ password-maker can be used like described below:
   
   
   // get a 8-character random password
-  var shortPassword = passwordMaker.generatePassword(8);
+  var shortPassword = generatePassword(8);
 
 
   // get a 32-character password with advanced options
@@ -38,6 +38,11 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
+1.0.4
+
+- Add examples in README.md
+- Make function 'generatePassword' callable
+
 1.0.3
 
 - Fix typo in README.md

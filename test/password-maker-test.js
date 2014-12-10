@@ -75,7 +75,7 @@ describe("The password-maker", function() {
     };
 
     for(var index = 0; index < 100; ++index) {
-      var result = passwordMaker.generatePassword(options);
+      var result = passwordMaker.generatePassword(options, 32);
       expect(result).to.match(/[A-Z]/);
       expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/#]/);
       expect(result).to.match(/[0-9]/);
