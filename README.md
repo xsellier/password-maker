@@ -8,14 +8,19 @@ password-maker can be used like described below:
 
 ``` js
   var passwordMaker = require("password-maker");
+  
+  
+  // get a 8-character random password
+  var shortPassword = passwordMaker.generatePassword(8);
 
+
+  // get a 32-character password with advanced options
   var options = {
     uppercase: false,
     symbols  : false,
     numbers  : true
   };
-
-  var password = passwordMaker.generatePassword(options, 32);
+  var longPassword = passwordMaker.generatePassword(options, 32);
 ```
 
 ## Installation
