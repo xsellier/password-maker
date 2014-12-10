@@ -7,7 +7,7 @@ Generate a password randomly (optimized).
 password-maker can be used like described below:
 
 ``` js
-  var passwordMaker = require("password-maker");
+  var generatePassword = require("password-maker");
   
   
   // get a 8-character random password
@@ -20,7 +20,7 @@ password-maker can be used like described below:
     symbols  : false,
     numbers  : true
   };
-  var longPassword = passwordMaker.generatePassword(options, 32);
+  var longPassword = generatePassword(options, 32);
 ```
 
 ## Installation
