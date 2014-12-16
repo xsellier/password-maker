@@ -38,6 +38,9 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
+1.0.5
+- Fix README.md typo
+
 1.0.4
 
 - Add examples in README.md
