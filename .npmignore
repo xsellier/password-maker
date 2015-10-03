@@ -1,7 +1,5 @@
 /node_modules
 /test
+/.git
 
 .gitignore
-
-LICENSE
-README.md

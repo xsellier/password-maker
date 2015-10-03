@@ -8,8 +8,7 @@ password-maker can be used like described below:
 
 ``` js
   var generatePassword = require("password-maker");
-  
-  
+
   // get a 8-character random password
   var shortPassword = generatePassword(8);
 
@@ -22,6 +21,16 @@ password-maker can be used like described below:
   };
   var longPassword = generatePassword(options, 32);
 ```
+
+### What if ?
+
+#### I declare a negative password length ?
+
+Min password length is 4, if you set -1 or 3, length will be automatically set to 4.
+
+#### I set a wrong option type ?
+
+Behavior could be defined following this https://dorey.github.io/JavaScript-Equality-Table/#if-statement
 
 ## Installation
 
@@ -38,6 +47,11 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
+1.1.2
+- Remove lodash from dependencies
+- Upgrade devDependencies
+- Add a min password size
+
 1.0.5
 - Fix README.md typo
 
