@@ -1,4 +1,4 @@
-password-maker
+password-maker [![Build Status](https://travis-ci.org/xsellier/password-maker.svg)](https://travis-ci.org/xsellier/password-maker)
 ==============
 
 Generate a password randomly (optimized).
