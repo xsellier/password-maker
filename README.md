@@ -47,6 +47,10 @@ Tests are written with mocha/chai.
 ```
 
 ## Changelog
+1.1.3
+- Fix issue with password requirement generation
+- Add unit tests
+
 1.1.2
 - Remove lodash from dependencies
 - Upgrade devDependencies
