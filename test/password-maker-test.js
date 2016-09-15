@@ -83,4 +83,14 @@ describe("The password-maker", function() {
 
     done();
   });
+
+  it("should generate a password with lower, upper, number and symbol with size 4", function(done) {
+    for(var index = 0; index < 100; ++index) {
+      var result = passwordMaker.generatePassword(4);
+      expect(result).to.match(/[A-Z]/);
+      expect(result).to.match(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/#]/);
+      expect(result).to.match(/[0-9]/);
+    }
+    done();
+  });
 });
